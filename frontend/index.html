@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hasta Girişi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hasta Girişi</h1>
+    <form id="loginForm">
+      <label for="tc">TC Kimlik No:</label>
+      <input type="text" id="tc" required maxlength="11" pattern="[0-9]{11}" />
+      
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Giriş Yap</button>
+      <p id="error" class="error"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
